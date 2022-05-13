@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1068177038025",
+    "project_id": "plenary-truck-348505",
+    "storage_bucket": "plenary-truck-348505.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1068177038025:android:fc4dfeb281e5b1a6cb4b18",
+        "android_client_info": {
+          "package_name": "com.gtappdevelopers.prabesh"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1068177038025-0jd001qj3v7oka1h0nq6o8rf72d6tbec.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1pA3n03-_vRGMpGwOB4z2YceDAwY1WA0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1068177038025-0jd001qj3v7oka1h0nq6o8rf72d6tbec.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Jobee</string>
+
+    <string name="BLE">Ble</string>
+    <string name="title_activity_nav_drawer">nav_drawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string name="developed_by_prabesh_dahal">Developed by:</string>
+    <string name="facilitated_by">Facilitated by:</string>
+    <string name="dev_name">Class: 8\nReliance International Academy\nBudhanilkantha, Kathmandu\nNepal</string>
+    <string name="fac_name">United States</string>
+    <string name="dev_name_only">Prabesh Dahal</string>
+    <string name="fac_name_only">Sushil Kafle</string>
+    <string name="basic_level_examination">Basic Level Examination</string>
+    <string name="class_8">Class:8</string>
+    <string name="questions">QUESTIONS</string>
+    <string name="about_the_app">About the app:</string>
+    <string name="rate_our_app">Rate our app</string>
+    <string name="share_our_app">Share our app</string>
+    <string name="download_our_other_apps">Download our other apps:</string>
+    <string name="tic_tac_toe">Tic Tac Toe</string>
+    <string name="tally_counter">Tally Counter</string>
+    <string name="citizenship">Citizenship</string>
+
+
+</resources>

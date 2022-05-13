@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/additional"
+        android:title="Additional Information" />
+
+    <item
+        android:id="@+id/profile"
+        android:title="Profile"/>
+    <!--specifying item for displaying option-->
+    <item
+        android:id="@+id/idLogOut"
+        android:icon="@drawable/ic_logout"
+        android:title="Log Out" />
+
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_baseline_youtube_searched_for_24"
+        android:title="Search"
+        app:showAsAction="collapseActionView|ifRoom"
+        app:actionViewClass="android.widget.SearchView" />
+
+
+</menu>

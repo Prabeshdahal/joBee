@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BB97FB"
+    android:paddingBottom="32dp"
+    tools:context=".additional">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#CEB9F4">
+
+
+            <View
+                android:id="@+id/divider1"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginHorizontal="16dp"
+                android:background="#1172E8"
+                app:layout_constraintBottom_toTopOf="@+id/textVieRate"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textVieRate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/textview_bg"
+                android:drawableStart="@drawable/ic_baseline_star_rate_24"
+                android:gravity="center"
+                android:paddingVertical="12dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="@string/rate_our_app"
+                android:textAllCaps="false"
+                android:textColor="#1147E8"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@id/textVieShare"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/divider1" />
+
+            <TextView
+                android:id="@+id/textVieShare"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/textview_bg"
+                android:gravity="center"
+                android:paddingVertical="12dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:src="@drawable/ic_baseline_share_24"
+                android:text="@string/share_our_app"
+                android:textAllCaps="false"
+                android:textColor="#1147E8"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/textVieRate"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/textVieRate"
+                app:layout_constraintTop_toTopOf="@id/textVieRate" />
+
+            <View
+                android:id="@+id/divider3"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="24dp"
+                android:background="#1172E8"
+                app:layout_constraintTop_toBottomOf="@id/textVieShare" />
+
+            <TextView
+                android:id="@+id/outOtherAppLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/textview_bg"
+                android:paddingVertical="8dp"
+                android:text="@string/download_our_other_apps"
+                android:textAlignment="center"
+                android:textColor="#1172E8"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/divider3" />
+
+            <ImageView
+                android:id="@+id/imageViewTic"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:importantForAccessibility="no"
+                android:src="@drawable/ttt"
+                app:layout_constraintEnd_toStartOf="@id/imageViewTally"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/outOtherAppLabel" />
+
+            <TextView
+                android:id="@+id/textViewTic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/tic_tac_toe"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@id/imageViewTic"
+                app:layout_constraintStart_toStartOf="@id/imageViewTic"
+                app:layout_constraintTop_toBottomOf="@id/imageViewTic" />
+
+            <ImageView
+                android:id="@+id/imageViewTally"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_marginStart="16dp"
+                android:importantForAccessibility="no"
+                android:src="@drawable/tally"
+                app:layout_constraintBottom_toBottomOf="@id/imageViewTic"
+                app:layout_constraintEnd_toStartOf="@id/imageCit"
+                app:layout_constraintStart_toEndOf="@id/imageViewTic"
+                app:layout_constraintTop_toTopOf="@id/imageViewTic" />
+
+            <TextView
+                android:id="@+id/textViewTally"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/tally_counter"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@id/imageViewTally"
+                app:layout_constraintStart_toStartOf="@id/imageViewTally"
+                app:layout_constraintTop_toBottomOf="@id/imageViewTally" />
+
+            <ImageView
+                android:id="@+id/imageCit"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:importantForAccessibility="no"
+                android:src="@drawable/citz"
+                app:layout_constraintBottom_toBottomOf="@id/imageViewTic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/imageViewTally"
+                app:layout_constraintTop_toTopOf="@id/imageViewTic" />
+
+            <TextView
+                android:id="@+id/textCit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/citizenship"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@id/imageCit"
+                app:layout_constraintStart_toStartOf="@id/imageCit"
+                app:layout_constraintTop_toBottomOf="@id/imageCit" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textview_bg"
+        android:paddingVertical="8dp"
+        android:text="@string/about_the_app"
+        android:textAlignment="center"
+        android:textColor="#1172E8"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/nestedScrollView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.014" />
+</androidx.constraintlayout.widget.ConstraintLayout>
